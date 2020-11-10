@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minecraft</title>
+    </head>
+    <body>
+       <header align="center"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Minecraft_logo.svg/1280px-Minecraft_logo.svg.png" width="510px" /></header>
+       <div id="fluid-box"><a href="https://scratch.mit.edu/projects/embed/50029544/?autostart=false"><button onclick="playSound()">Play Flash version</button></a> <a href="https://phosphorus.github.io/app.html?id=10128407&turbo=false&full-screen=true"><button onclick="playSound(); alert('Had to change link because 3D version crashed web')">Play Javascript version</button></a></div>
+       <div id="controls">Controls: <br /> WASD: Move<br />Arrow keys: Look<br />Click: Break<br />Space: Jump<br />Q+Click: Place<br /></div>
+       <div id="infobox" style="display: none">This version of Minecraft is from a project made in Scratch. Scratch is a trusted, kid-friendly website. | Images and sounds © Mojang | Programming by Finlay_Cool and griffpatch.</div><div id="info-x" style="display: none" onclick="hideBox(); playSound()"><center>X</center></div>
+       <button id="info" onclick="showBox(); playSound()">i</button>
+    <div id="layer" style="display: none">a</div>
+    <img src="http://static.micheljansen.org/uploads/mac-osx-arrow-cursor.png" id="cursor" width="18px"/>
+    <audio id="sound">
+        <source src="https://www.myinstants.com/media/sounds/minecraft_click.mp3">
+    </audio>
+    </body>
+</html>
+
+
+
+
+<script>
+    var infobox = document.getElementById('infobox')
+    var dismiss = document.getElementById('info-x')
+    var layer = document.getElementById('layer')
+    function showBox() {
+        infobox.style = "display: block;"
+        dismiss.style = "display: block;"
+        layer.style = "display: block;"
+        window.addEventListener('mousedown', autoHide)
+    }
+    function hideBox() {
+        infobox.style = "display: none;"
+        dismiss.style = "display: none;"
+        layer.style = "display: none"
+        window.removeEventListener('mousedown', autoHide)
+    }
+    function autoHide() {
+        if (window.event.clientY >= 218 || window.event.clientY <= 131) {
+            infobox.style = "display: none"
+            dismiss.style = "display: none"
+            layer.style = "display: none"
+        }
+    }
+    function moveCursor() {
+        var x = document.getElementById('cursor')
+        x.style.left = window.event.clientX + 'px'
+        x.style.top = window.event.clientY + 'px'
+    }
+    function playSound() {
+        document.getElementById('sound').play()
+    }
+    //document.addEventListener('mousemove', moveCursor)
+</script>
+<!-- http://www.fonts2u.com/tminecraft_font_by_pwnage_block-d37t6nb.ttf --><html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minecraft</title>
+    </head>
+    <body>
+       <header align="center"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Minecraft_logo.svg/1280px-Minecraft_logo.svg.png" width="510px" /></header>
+       <div id="fluid-box"><a href="https://scratch.mit.edu/projects/embed/50029544/?autostart=false"><button onclick="playSound()">Play Flash version</button></a> <a href="https://phosphorus.github.io/app.html?id=10128407&turbo=false&full-screen=true"><button onclick="playSound(); alert('Had to change link because 3D version crashed web')">Play Javascript version</button></a></div>
+       <div id="controls">Controls: <br /> WASD: Move<br />Arrow keys: Look<br />Click: Break<br />Space: Jump<br />Q+Click: Place<br /></div>
+       <div id="infobox" style="display: none">This version of Minecraft is from a project made in Scratch. Scratch is a trusted, kid-friendly website. | Images and sounds © Mojang | Programming by Finlay_Cool and griffpatch.</div><div id="info-x" style="display: none" onclick="hideBox(); playSound()"><center>X</center></div>
+       <button id="info" onclick="showBox(); playSound()">i</button>
+    <div id="layer" style="display: none">a</div>
+    <img src="http://static.micheljansen.org/uploads/mac-osx-arrow-cursor.png" id="cursor" width="18px"/>
+    <audio id="sound">
+        <source src="https://www.myinstants.com/media/sounds/minecraft_click.mp3">
+    </audio>
+    </body>
+</html>
+
+
+
+
+<script>
+    var infobox = document.getElementById('infobox')
+    var dismiss = document.getElementById('info-x')
+    var layer = document.getElementById('layer')
+    function showBox() {
+        infobox.style = "display: block;"
+        dismiss.style = "display: block;"
+        layer.style = "display: block;"
+        window.addEventListener('mousedown', autoHide)
+    }
+    function hideBox() {
+        infobox.style = "display: none;"
+        dismiss.style = "display: none;"
+        layer.style = "display: none"
+        window.removeEventListener('mousedown', autoHide)
+    }
+    function autoHide() {
+        if (window.event.clientY >= 218 || window.event.clientY <= 131) {
+            infobox.style = "display: none"
+            dismiss.style = "display: none"
+            layer.style = "display: none"
+        }
+    }
+    function moveCursor() {
+        var x = document.getElementById('cursor')
+        x.style.left = window.event.clientX + 'px'
+        x.style.top = window.event.clientY + 'px'
+    }
+    function playSound() {
+        document.getElementById('sound').play()
+    }
+    //document.addEventListener('mousemove', moveCursor)
+</script>
+<!-- http://www.fonts2u.com/tminecraft_font_by_pwnage_block-d37t6nb.ttf -->
